@@ -7,7 +7,9 @@
 </div>
 <div class="row">
   <div class="col-sm-4">Date of birth</div>
-  <div class="col-sm-8">{{ contact.dob}}</div>
+  <div class="col-sm-8">{{ contact.dob }} <br>
+  ({{contact.dob | age : 2 }})
+  </div>
 </div>
 <div class="row">
   <div class="col-sm-4">Email address</div>
